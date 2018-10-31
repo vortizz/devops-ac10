@@ -1,0 +1,15 @@
+{% extends "app/layout.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Cadastro de vestibulares</h1>
+</div>
+
+<table class="table">
+  <tr><th>Nome do vestibular</th></tr>
+    {% for vestibular in vestibulares %}
+      <tr><td>{{ vestibular.nome }}</td></tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}
